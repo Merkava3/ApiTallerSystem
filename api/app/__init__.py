@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_migrate import Migrate
-from flask_cors import CORS  # Asegúrate de haber importado CORS correctamente
+from flask_cors import CORS 
 from .models import db
 from .Views import api_v1
 

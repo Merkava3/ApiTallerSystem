@@ -65,8 +65,6 @@ def delete_producto(detalles_compra):
 @detalles_compra_routes.route('/compra_detalles/details', methods=['GET'])
 def get_compras_with_details():
     result = Detalles_compra.get_compras_with_details()
-    print(result)
-
     if not result:
         return notFound()  # Si no hay resultados, retorna un error 404
 
